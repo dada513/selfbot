@@ -1,0 +1,20 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "main": "es.js",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "chance": "^1.1.7",
+    "discord.js": "11.6.4",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "knex": "^0.21.8",
+    "patch-package": "^6.2.2",
+    "request": "^2.88.2",
+    "serp": "^2.1.0",
+    "sqlite3": "^5.0.0"
+  }
+}

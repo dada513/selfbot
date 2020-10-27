@@ -1,0 +1,13 @@
+diff --git a/node_modules/discord.js/src/client/websocket/packets/handlers/Ready.js b/node_modules/discord.js/src/client/websocket/packets/handlers/Ready.js
+index 3eb80a2..3df30e5 100644
+--- a/node_modules/discord.js/src/client/websocket/packets/handlers/Ready.js
++++ b/node_modules/discord.js/src/client/websocket/packets/handlers/Ready.js
+@@ -38,7 +38,7 @@ class ReadyHandler extends AbstractHandler {
+     if (data.notes) {
+       for (const user of Object.keys(data.notes)) {
+         let note = data.notes[user];
+-        if (!note.length) note = null;
++        if (!note || !note.length) note = null;
+ 
+         client.user.notes.set(user, note);
+       }
